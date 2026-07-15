@@ -149,3 +149,31 @@ This document defines the official repository structure for Raseen Technology an
 ---
 
 **End of Document**
+
+## Planned Documentation Structure
+
+The following structure represents the target documentation architecture for the Raseen Technology repository. Some documents are planned for future development and may not yet exist.
+
+docs/
+│
+├── README.md
+├── PROJECT-STRUCTURE.md
+├── RASEEN-HOMEPAGE-FOUNDATION-v1.0.md
+├── DESIGN-SYSTEM.md
+├── ROADMAP.md
+├── CHANGELOG.md
+├── DECISIONS.md
+├── BUSINESS-PLAN.md
+│
+└── governance/
+    ├── README.md
+    ├── LEGAL-GOVERNANCE-FOUNDATION.md
+    ├── COUNTRY-COMPARISON.md
+    ├── REGULATORY-RESEARCH.md
+    ├── COMPLIANCE-ROADMAP.md
+    ├── CORPORATE-GOVERNANCE.md
+    ├── CODE-OF-ETHICS.md
+    ├── RISK-REGISTER.md
+    ├── PRIVACY-FRAMEWORK.md
+    └── INFORMATION-SECURITY.md
+    
