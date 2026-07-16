@@ -38,6 +38,22 @@ We believe that combining professional expertise, modern technology, and special
 
 هذه الصياغة مرنة؛ فإذا أطلقتم غدًا منصة SaaS، أو نظام GRC، أو منصة تعليمية، أو مساعدًا ذكيًا، أو برامج باشتراكات سنوية، فستظل جميعها منسجمة مع الهوية التي أعلنتموها اليوم، دون الحاجة إلى إعادة صياغة رسالة الشركة أو تعديلها
 
+docs/
+
+BRAND-GUIDELINES.md
+
+SITE-ARCHITECTURE.md
+
+CONTENT-STRATEGY.md
+
+DESIGN-SYSTEM.md
+
+UI-COMPONENTS.md
+
+ROADMAP.md
+
+CHANGELOG.md
+
 
 # raseen-technology
 Official corporate website of Raseen Technology, delivering innovative solutions in Information Technology, Artificial Intelligence, Business Solutions, Digital Learning, GRC, ERP, Internal Audit, and Digital Transformation.
