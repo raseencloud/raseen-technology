@@ -39,7 +39,7 @@ h2 {
     font-size: 42px;
     letter-spacing: 1px;
 }
-header p {
+.hero p {
     margin-top: 10px;
     font-size: 18px;
     opacity: 0.85;
