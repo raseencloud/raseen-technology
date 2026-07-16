@@ -226,7 +226,7 @@ body {
     background: var(--bg-primary);
     color: var(--text-primary);
     text-align: center;
-    padding: 100px 20px 140px;
+    padding: 60px 20px 100px;
     min-height: auto;
     display: flex;
     flex-direction: column;
