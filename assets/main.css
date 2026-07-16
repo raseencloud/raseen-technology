@@ -14,8 +14,8 @@
     --accent-hover: #047857;
     --accent-light: #d1fae5;
     --border-color: #e5e7eb;
-    --font-size-hero: 2.5rem;
-    --font-size-hero-mobile: 1.75rem;
+    --font-size-hero: 3rem;
+    --font-size-hero-mobile: 2rem;
     --font-size-body: 1.125rem;
     --font-size-body-mobile: 1rem;
     --transition: all 0.3s ease;
@@ -36,12 +36,17 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cairo', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--bg-light);
     color: var(--text-dark);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+/* English text styling */
+[lang="en"] {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Container */
@@ -73,11 +78,12 @@ body {
 
 .logo a {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--bg-primary);
     text-decoration: none;
     line-height: 1.2;
     display: block;
+    font-family: 'Cairo', 'Inter', sans-serif;
 }
 
 .logo span {
@@ -86,6 +92,7 @@ body {
     color: var(--accent-color);
     font-weight: 500;
     margin-top: 2px;
+    font-family: 'Inter', sans-serif;
 }
 
 .nav-links {
@@ -97,9 +104,10 @@ body {
     text-decoration: none;
     color: #374151;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     transition: var(--transition);
     position: relative;
+    font-family: 'Cairo', sans-serif;
 }
 
 .nav-links a:hover {
@@ -123,24 +131,24 @@ body {
 
 .nav-links a[aria-current="page"] {
     color: var(--accent-color);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* ============================================
-   HERO SECTION
+   HERO SECTION - FIXED LAYOUT
    ============================================ */
 .hero {
     background: var(--bg-primary);
     color: var(--text-primary);
     text-align: center;
-    padding: 120px 20px;
-    min-height: 80vh;
+    padding: 100px 20px 120px;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .hero::before {
@@ -157,22 +165,26 @@ body {
 .hero .container {
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .hero h1 {
     margin: 0 0 20px 0;
     font-size: var(--font-size-hero);
-    letter-spacing: 1px;
-    line-height: 1.2;
-    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.3;
+    font-weight: 800;
+    font-family: 'Cairo', sans-serif;
 }
 
 .hero h1 span {
-    font-size: 0.6em;
+    font-size: 0.55em;
     opacity: 0.85;
-    font-weight: 400;
+    font-weight: 500;
     display: block;
-    margin-top: 10px;
+    margin-top: 8px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
 }
 
 .subtitle-ar {
@@ -183,6 +195,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.8;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
 }
 
 .subtitle-en {
@@ -193,7 +207,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
-    font-weight: 300;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Tags */
@@ -208,10 +223,17 @@ body {
     align-items: center;
 }
 
+.tags {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+}
+
 .tags-en {
     font-size: 1rem;
     opacity: 0.75;
     margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 .tag {
@@ -224,13 +246,14 @@ body {
     margin: 0 4px;
 }
 
-/* Hero Buttons */
+/* Hero Buttons - FIXED: No more cutoff */
 .hero-buttons {
     margin-top: 40px;
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    padding-bottom: 10px;
 }
 
 .btn {
@@ -245,6 +268,7 @@ body {
     text-align: center;
     cursor: pointer;
     border: 2px solid transparent;
+    font-family: 'Cairo', 'Inter', sans-serif;
 }
 
 .btn-primary {
@@ -293,6 +317,8 @@ main {
     margin-bottom: 20px;
     color: var(--bg-primary);
     text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
 }
 
 .section p {
@@ -302,6 +328,7 @@ main {
     margin: 0 auto 30px;
     text-align: center;
     line-height: 1.8;
+    font-family: 'Cairo', sans-serif;
 }
 
 .section-alt {
@@ -335,12 +362,15 @@ main {
     font-size: 1.25rem;
     color: var(--bg-primary);
     margin-bottom: 10px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
 }
 
 .service-card p {
     font-size: 0.95rem;
     color: #6b7280;
     margin: 0;
+    font-family: 'Cairo', sans-serif;
 }
 
 /* Contact Section */
@@ -381,6 +411,7 @@ main {
 
 .footer p {
     margin: 5px 0;
+    font-family: 'Cairo', 'Inter', sans-serif;
 }
 
 /* ============================================
@@ -404,9 +435,9 @@ main {
         font-size: 14px;
     }
 
-    /* Hero */
+    /* Hero - FIXED padding for mobile */
     .hero {
-        padding: 80px 15px;
+        padding: 80px 15px 100px;
         min-height: auto;
     }
 
@@ -415,7 +446,7 @@ main {
     }
 
     .hero h1 span {
-        font-size: 0.55em;
+        font-size: 0.5em;
     }
 
     .subtitle-ar {
@@ -473,11 +504,11 @@ main {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 60px 15px;
+        padding: 60px 15px 80px;
     }
 
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .subtitle-ar {
