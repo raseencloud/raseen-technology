@@ -1,1 +1,24 @@
-main.css
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1f2937;
+}
+
+header {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
