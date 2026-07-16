@@ -12,9 +12,9 @@ body {
     color: #1f2937;
 }
 
-    .hero {
-    background: #0f172a;
-    color: white;
+    ..hero {
+    background: var(--bg-primary);
+    color: var(--text-primary);
     text-align: center;
     padding: 40px 20px;
 }
