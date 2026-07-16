@@ -2,6 +2,91 @@
    RASEEN TECHNOLOGY - MAIN STYLESHEET
    ============================================ */
 
+/* ============================================
+   GOOGLE FONTS - @font-face declarations
+   ============================================ */
+
+/* Cairo Font - Arabic */
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/cairo/v28/SLXgc1nY6HkvamImRJqAps3gPwHX.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/cairo/v28/SLXgc1nY6HkvamImRJqAps3gPwHX.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/cairo/v28/SLXgc1nY6HkvamImRJqAps3gPwHX.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/cairo/v28/SLXgc1nY6HkvamImRJqAps3gPwHX.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/cairo/v28/SLXgc1nY6HkvamImRJqAps3gPwHX.woff2) format('woff2');
+}
+
+/* Inter Font - English */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.woff2) format('woff2');
+}
+
 /* CSS Variables */
 :root {
     --bg-primary: #111827;
@@ -141,7 +226,7 @@ body {
     background: var(--bg-primary);
     color: var(--text-primary);
     text-align: center;
-    padding: 100px 20px 120px;
+    padding: 100px 20px 140px;
     min-height: auto;
     display: flex;
     flex-direction: column;
@@ -253,7 +338,7 @@ body {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .btn {
@@ -437,7 +522,7 @@ main {
 
     /* Hero - FIXED padding for mobile */
     .hero {
-        padding: 80px 15px 100px;
+        padding: 80px 15px 120px;
         min-height: auto;
     }
 
@@ -504,7 +589,7 @@ main {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 60px 15px 80px;
+        padding: 60px 15px 100px;
     }
 
     .hero h1 {
