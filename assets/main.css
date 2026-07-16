@@ -221,7 +221,7 @@ body {
    HERO SECTION - FIXED LAYOUT
    ============================================ */
 .hero {
-    background: #1E3A5F;
+    background: var(--bg-primary);
 }
     color: var(--text-primary);
     text-align: center;
