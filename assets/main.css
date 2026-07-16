@@ -44,3 +44,42 @@ h2 {
     font-size: 18px;
     opacity: 0.85;
 }
+/* Navigation Header */
+.navbar {
+    background: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111827;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    color: #059669;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #059669;
+}
