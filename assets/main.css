@@ -1,3 +1,10 @@
+:root { 
+    --bg-primary: #111827;
+    --text-primary: #f8fafc;
+    --font-size-hero: 2.5rem;
+    --font-size-body: 1.125rem;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
