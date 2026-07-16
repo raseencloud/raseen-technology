@@ -48,6 +48,56 @@ UI-COMPONENTS.md
 ROADMAP.md
 CHANGELOG.md
 
-
+raseen-technology/
+│
+├── index.html
+├── favicon.ico
+├── robots.txt
+├── sitemap.xml
+├── README.md
+│
+├── assets/
+│   ├── css/
+│   │   ├── main.css
+│   │   ├── variables.css
+│   │   ├── components.css
+│   │   ├── layout.css
+│   │   └── responsive.css
+│   │
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── language.js
+│   │   └── animation.js
+│   │
+│   ├── images/
+│   │
+│   ├── icons/
+│   │
+│   └── fonts/
+│
+├── pages/
+│   ├── about.html
+│   ├── services.html
+│   ├── academy.html
+│   ├── platforms.html
+│   ├── consulting.html
+│   ├── contact.html
+│   ├── articles.html
+│   └── privacy.html
+│
+├── data/
+│   ├── services.json
+│   ├── platforms.json
+│   ├── articles.json
+│   └── testimonials.json
+│
+└── docs/
+    ├── BRAND-GUIDELINES.md
+    ├── SITE-ARCHITECTURE.md
+    ├── CONTENT-STRATEGY.md
+    ├── DESIGN-SYSTEM.md
+    ├── ROADMAP.md
+    ├── CHANGELOG.md
+    └── PROJECT-STRUCTURE.md
 # raseen-technology
 Official corporate website of Raseen Technology, delivering innovative solutions in Information Technology, Artificial Intelligence, Business Solutions, Digital Learning, GRC, ERP, Internal Audit, and Digital Transformation.
