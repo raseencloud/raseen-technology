@@ -12,7 +12,7 @@ body {
     color: #1f2937;
 }
 
-    ..hero {
+   .hero {
     background: var(--bg-primary);
     color: var(--text-primary);
     text-align: center;
