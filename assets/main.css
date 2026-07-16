@@ -219,10 +219,10 @@ body {
 
 /* ============================================
    HERO SECTION - FIXED LAYOUT
-   ============================================ */
+============================================ */
+
 .hero {
     background: var(--bg-primary);
-}
     color: var(--text-primary);
     text-align: center;
     padding: 60px 20px 100px;
