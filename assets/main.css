@@ -373,7 +373,7 @@ body {
 .btn-primary:hover {
     background: var(--accent-hover);
     border-color: var(--accent-hover);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.02);
     box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
 }
 
@@ -386,7 +386,7 @@ body {
 .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.12);
     border-color: #ffffff;
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.02); 
 }
 
 /* ============================================
