@@ -30,9 +30,8 @@
     padding: 0;
 }
 
-
 body {
-    font-family: 'Cairo', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Tajawal', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--bg-light);
     color: var(--text-dark);
     line-height: 1.6;
@@ -79,7 +78,7 @@ body {
     text-decoration: none;
     line-height: 1.2;
     display: block;
-    font-family: 'Tajawal', sans-serif;  /* بدلاً من 'Cairo' */
+    font-family: 'Tajawal', sans-serif;
 }
 
 .logo span {
@@ -103,7 +102,7 @@ body {
     font-weight: 600;
     transition: var(--transition);
     position: relative;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .nav-links a:hover {
@@ -131,7 +130,7 @@ body {
 }
 
 /* ============================================
-   HERO SECTION — IBM Plex Sans Arabic فقط هنا
+   HERO SECTION
    ============================================ */
 .hero {
     background: var(--bg-primary);
@@ -171,7 +170,7 @@ body {
     letter-spacing: 0;
     line-height: 1.3;
     font-weight: 800;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     color: var(--text-primary);
 }
 
@@ -194,7 +193,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.8;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-weight: 500;
     color: var(--text-primary);
 }
@@ -226,7 +225,7 @@ body {
 }
 
 .tags {
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-weight: 600;
 }
 
@@ -272,7 +271,7 @@ body {
     transition: var(--transition);
     cursor: pointer;
     border: 2px solid transparent;
-    font-family: 'IBM Plex Sans Arabic', 'Inter', sans-serif;
+    font-family: 'Tajawal', 'Inter', sans-serif;
 }
 
 .btn-primary {
@@ -302,7 +301,7 @@ body {
 }
 
 /* ============================================
-   MAIN CONTENT & SECTIONS — Cairo (كما كان)
+   MAIN CONTENT & SECTIONS
    ============================================ */
 main {
     padding: 0;
@@ -321,7 +320,7 @@ main {
     margin-bottom: 20px;
     color: var(--bg-primary);
     text-align: center;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-weight: 700;
 }
 
@@ -332,7 +331,7 @@ main {
     margin: 0 auto 30px;
     text-align: center;
     line-height: 1.8;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .section-alt {
@@ -373,7 +372,7 @@ main {
     font-size: 1.25rem;
     color: var(--bg-primary);
     margin-bottom: 10px;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-weight: 700;
 }
 
@@ -381,7 +380,7 @@ main {
     font-size: 0.95rem;
     color: #6b7280;
     margin: 0;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 /* Contact Section */
@@ -396,14 +395,14 @@ main {
 .contact-buttons .btn-primary {
     background: var(--accent-color);
     color: #ffffff;
-    font-family: 'Cairo', 'Inter', sans-serif;
+    font-family: 'Tajawal', 'Inter', sans-serif;
 }
 
 .contact-buttons .btn-secondary {
     border: 2px solid var(--accent-color);
     color: var(--accent-color);
     background: transparent;
-    font-family: 'Cairo', 'Inter', sans-serif;
+    font-family: 'Tajawal', 'Inter', sans-serif;
 }
 
 .contact-buttons .btn-secondary:hover {
@@ -412,7 +411,7 @@ main {
 }
 
 /* ============================================
-   FOOTER — Cairo (كما كان)
+   FOOTER
    ============================================ */
 .footer {
     background: var(--bg-secondary);
@@ -424,7 +423,7 @@ main {
 
 .footer p {
     margin: 5px 0;
-    font-family: 'Cairo', 'Inter', sans-serif;
+    font-family: 'Tajawal', 'Inter', sans-serif;
     color: #d1d5db;
 }
 
@@ -573,7 +572,10 @@ main {
         transition-duration: 0.01ms !important;
     }
 
- }
+    html {
+        scroll-behavior: auto;
+    }
+}
 
 /* Focus styles for accessibility */
 a:focus-visible,
@@ -594,7 +596,7 @@ button:focus-visible,
     text-decoration: none;
     z-index: 1000;
     transition: top 0.3s;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .skip-link:focus {
