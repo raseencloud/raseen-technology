@@ -79,7 +79,7 @@ body {
     text-decoration: none;
     line-height: 1.2;
     display: block;
-    font-family: 'Cairo', 'Inter', sans-serif;
+    font-family: 'Tajawal', sans-serif;  /* بدلاً من 'Cairo' */
 }
 
 .logo span {
