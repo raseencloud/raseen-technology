@@ -1,212 +1,630 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+/* ============================================
+   RASEEN TECHNOLOGY - MAIN STYLESHEET
+   ============================================ */
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رصين تكنولوجي | Raseen Technology</title>
+/* CSS Variables */
+:root {
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --bg-light: #f8fafc;
+    --text-primary: #f8fafc;
+    --text-secondary: #9ca3af;
+    --text-dark: #1f2937;
+    --accent-color: #059669;
+    --accent-hover: #047857;
+    --accent-light: #d1fae5;
+    --border-color: #e5e7eb;
+    --font-size-hero: 2.7rem;
+    --font-size-hero-mobile: 2rem;
+    --font-size-body: 1.125rem;
+    --font-size-body-mobile: 1rem;
+    --transition: all 0.3s ease;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Meta Description for SEO -->
-    <meta name="description" content="رصين تكنولوجي - نطوّر منصات رقمية متخصصة تقدّم حلولًا مبتكرة للأعمال والحوكمة والتطوير المهني والعلوم الشرعية، مدعومة بالذكاء الاصطناعي والتقنيات المتقدمة.">
-    <meta name="keywords" content="رصين تكنولوجي, Raseen Technology, منصات رقمية, حلول الأعمال, الحوكمة, التطوير المهني, العلوم الشرعية, الذكاء الاصطناعي">
-    <meta name="author" content="Raseen Technology">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
 
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://raseencloud.github.io/raseen-technology/">
-    <meta property="og:title" content="رصين تكنولوجي | Raseen Technology">
-    <meta property="og:description" content="نطوّر منصات رقمية متخصصة تقدّم حلولًا مبتكرة للأعمال والحوكمة والتطوير المهني والعلوم الشرعية، مدعومة بالذكاء الاصطناعي والتقنيات المتقدمة.">
-    <meta property="og:image" content="https://raseencloud.github.io/raseen-technology/assets/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="ar_SA">
+body {
+    font-family: 'Cairo', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="رصين تكنولوجي | Raseen Technology">
-    <meta name="twitter:description" content="نطوّر منصات رقمية متخصصة تقدّم حلولًا مبتكرة للأعمال والحوكمة والتطوير المهني والعلوم الشرعية.">
-    <meta name="twitter:image" content="https://raseencloud.github.io/raseen-technology/assets/og-image.png">
+/* English text styling */
+[lang="en"] {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    <!-- Theme Color for Mobile Browsers -->
-    <meta name="theme-color" content="#111827">
-    <meta name="msapplication-TileColor" content="#111827">
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://raseencloud.github.io/raseen-technology/">
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.navbar {
+    background: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
 
-    <!-- Performance: DNS Prefetch & Preconnect -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    <!-- Google Fonts: Cairo (Arabic) + IBM Plex Sans Arabic (Hero) + Inter (English) -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+.logo a {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--bg-primary);
+    text-decoration: none;
+    line-height: 1.2;
+    display: block;
+    font-family: 'Cairo', 'Inter', sans-serif;
+}
 
-    <!-- Preload Critical CSS -->
-    <link rel="preload" href="assets/main.css" as="style">
+.logo span {
+    display: block;
+    font-size: 12px;
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-top: 2px;
+    font-family: 'Inter', sans-serif;
+}
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/main.css">
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
 
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "رصين تكنولوجي",
-        "alternateName": "Raseen Technology",
-        "url": "https://raseencloud.github.io/raseen-technology/",
-        "logo": "https://raseencloud.github.io/raseen-technology/assets/favicon.png",
-        "description": "نطوّر منصات رقمية متخصصة تقدّم حلولًا مبتكرة للأعمال والحوكمة والتطوير المهني والعلوم الشرعية",
-        "sameAs": []
+.nav-links a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 16px;
+    font-weight: 600;
+    transition: var(--transition);
+    position: relative;
+    font-family: 'Cairo', sans-serif;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: var(--transition);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a[aria-current="page"] {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+/* ============================================
+   HERO SECTION — IBM Plex Sans Arabic فقط هنا
+   ============================================ */
+.hero {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    text-align: center;
+    padding: 60px 20px 100px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(5, 150, 105, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.hero h1 {
+    margin: 0 0 20px 0;
+    font-size: var(--font-size-hero);
+    letter-spacing: 0;
+    line-height: 1.3;
+    font-weight: 800;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    color: var(--text-primary);
+}
+
+.hero h1 span {
+    font-size: 0.55em;
+    opacity: 0.85;
+    font-weight: 500;
+    display: block;
+    margin-top: 8px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+}
+
+.subtitle-ar {
+    font-size: var(--font-size-body);
+    margin-bottom: 15px;
+    opacity: 0.9;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.subtitle-en {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    opacity: 0.75;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-primary);
+}
+
+/* Tags */
+.tags, .tags-en {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    color: var(--text-primary);
+}
+
+.tags {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 600;
+}
+
+.tags-en {
+    font-size: 1rem;
+    opacity: 0.75;
+    margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.tag {
+    display: inline-block;
+}
+
+.tag-separator {
+    color: var(--accent-color);
+    opacity: 0.7;
+    margin: 0 4px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    height: 58px;
+    padding: 0 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    transition: var(--transition);
+    cursor: pointer;
+    border: 2px solid transparent;
+    font-family: 'IBM Plex Sans Arabic', 'Inter', sans-serif;
+}
+
+.btn-primary {
+    background: var(--accent-color);
+    color: #ffffff;
+    border-color: var(--accent-color);
+    box-shadow: 0 4px 14px rgba(5, 150, 105, 0.3);
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
+}
+
+.btn-secondary {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #ffffff;
+    transform: translateY(-2px) scale(1.02);
+}
+
+/* ============================================
+   MAIN CONTENT & SECTIONS — Cairo (كما كان)
+   ============================================ */
+main {
+    padding: 0;
+}
+
+.section {
+    padding: 80px 20px;
+}
+
+.section .container {
+    max-width: 1000px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--bg-primary);
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #4b5563;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    text-align: center;
+    line-height: 1.8;
+    font-family: 'Cairo', sans-serif;
+}
+
+.section-alt {
+    background: #ffffff;
+    color: var(--text-dark);
+}
+
+.section-alt h2,
+.section-alt p {
+    color: inherit;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: var(--transition);
+    color: var(--text-dark);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-color);
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    color: var(--bg-primary);
+    margin-bottom: 10px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Contact Section */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-buttons .btn-primary {
+    background: var(--accent-color);
+    color: #ffffff;
+    font-family: 'Cairo', 'Inter', sans-serif;
+}
+
+.contact-buttons .btn-secondary {
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    background: transparent;
+    font-family: 'Cairo', 'Inter', sans-serif;
+}
+
+.contact-buttons .btn-secondary:hover {
+    background: var(--accent-color);
+    color: #ffffff;
+}
+
+/* ============================================
+   FOOTER — Cairo (كما كان)
+   ============================================ */
+.footer {
+    background: var(--bg-secondary);
+    color: #d1d5db;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-family: 'Cairo', 'Inter', sans-serif;
+    color: #d1d5db;
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE OPTIMIZATION
+   ============================================ */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
     }
-    </script>
-<base target="_blank">
-</head>
 
-<body>
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-    <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="skip-link">الانتقال إلى المحتوى الرئيسي</a>
+    .nav-links a {
+        font-size: 14px;
+    }
 
-    <!-- Navigation Header -->
-    <nav class="navbar" role="navigation" aria-label="القائمة الرئيسية">
-        <div class="container">
-            <div class="logo">
-                <a href="#" aria-label="الصفحة الرئيسية - رصين تكنولوجي">
-                    رصين تكنولوجي
-                    <span>Raseen Technology</span>
-                </a>
-            </div>
+    .hero {
+        padding: 80px 15px 120px;
+        min-height: auto;
+    }
 
-            <div class="nav-links">
-                <a href="#" aria-current="page">الرئيسية</a>
-                <a href="#solutions">الحلول</a>
-                <a href="#services">الخدمات</a>
-                <a href="#contact">تواصل معنا</a>
-            </div>
-        </div>
-    </nav>
+    .hero h1 {
+        font-size: var(--font-size-hero-mobile);
+    }
 
-    <!-- Hero Section -->
-    <header class="hero" role="banner">
-        <div class="container">
-            <h1>
-                رصين تكنولوجي
-                <br>
-                <span>Raseen Technology</span>
-            </h1>
+    .hero h1 span {
+        font-size: 0.5em;
+    }
 
-            <p class="subtitle-ar">
-                نطوّر منصات رقمية متخصصة تقدّم حلولًا مبتكرة للأعمال والحوكمة والتطوير المهني والعلوم الشرعية، مدعومة بالذكاء الاصطناعي والتقنيات المتقدمة
-            </p>
+    .subtitle-ar {
+        font-size: var(--font-size-body-mobile);
+    }
 
-            <p class="subtitle-en" lang="en" dir="ltr">
-                We develop specialized digital platforms that deliver innovative solutions for business, governance, professional development, and Islamic sciences, powered by artificial intelligence and advanced technologies
-            </p>
+    .subtitle-en {
+        font-size: 0.9rem;
+    }
 
-            <div class="tags" aria-label="مجالات التخصص">
-                <span class="tag">حلول الأعمال</span>
-                <span class="tag-separator" aria-hidden="true">•</span>
-                <span class="tag">الحوكمة</span>
-                <span class="tag-separator" aria-hidden="true">•</span>
-                <span class="tag">التطوير المهني</span>
-                <span class="tag-separator" aria-hidden="true">•</span>
-                <span class="tag">العلوم الشرعية</span>
-            </div>
+    .tags, .tags-en {
+        font-size: 0.95rem;
+    }
 
-            <div class="tags-en" lang="en" dir="ltr" aria-label="Specializations">
-                <span class="tag">Business Solutions</span>
-                <span class="tag-separator" aria-hidden="true">•</span>
-                <span class="tag">Governance</span>
-                <span class="tag-separator" aria-hidden="true">•</span>
-                <span class="tag">Professional Development</span>
-                <span class="tag-separator" aria-hidden="true">•</span>
-                <span class="tag">Islamic Sciences</span>
-            </div>
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary" role="button">ابدأ رحلتك</a>
-                <a href="#solutions" class="btn btn-secondary" role="button">استكشف خدماتنا</a>
-            </div>
-        </div>
-    </header>
+    .btn {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 16px;
+    }
 
-    <main id="main-content">
+    .section {
+        padding: 60px 15px;
+    }
 
-        <section id="solutions" class="section">
-            <div class="container">
-                <h2>منصاتنا</h2>
-                <p>
-                    مرحبًا بكم في الموقع الرسمي لشركة رصين تكنولوجي. نعمل على تطوير حلول رقمية متكاملة تلبي احتياجات الأعمال والمؤسسات في مجالات الحوكمة والتطوير المهني والعلوم الشرعية.
-                </p>
-            </div>
-        </section>
+    .section h2 {
+        font-size: 1.75rem;
+    }
 
-        <section id="services" class="section section-alt">
-            <div class="container">
-                <h2>خدماتنا</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>حلول الأعمال</h3>
-                        <p>منصات رقمية متكاملة لإدارة الأعمال والعمليات</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>الحوكمة</h3>
-                        <p>أنظمة متخصصة للحوكمة والامتثال والتدقيق</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>التطوير المهني</h3>
-                        <p>منصات تدريبية وتطويرية للمهنيين</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>العلوم الشرعية</h3>
-                        <p>حلول رقمية متخصصة في العلوم الإسلامية</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 
-        <section id="contact" class="section">
-            <div class="container">
-                <h2>تواصل معنا</h2>
-                <p>
-                    نحن هنا لمساعدتك. تواصل معنا للاستفسارات أو للبدء في مشروعك الرقمي.
-                </p>
-                <div class="contact-buttons">
-                    <a href="mailto:info@raseen.tech" class="btn btn-primary">البريد الإلكتروني</a>
-                    <a href="https://wa.me/966XXXXXXXXX" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">واتساب</a>
-                </div>
-            </div>
-        </section>
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 
-    </main>
+    .contact-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
 
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <p>© 2026 رصين تكنولوجي. جميع الحقوق محفوظة.</p>
-            <p lang="en" dir="ltr">Raseen Technology. All rights reserved.</p>
-        </div>
-    </footer>
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 15px 100px;
+    }
 
-    <!-- Google Analytics (Optional - Uncomment when ready) -->
-    <!--
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-    -->
+    .hero h1 {
+        font-size: 1.6rem;
+    }
 
-</body>
+    .subtitle-ar {
+        font-size: 0.95rem;
+    }
 
-</html>
+    .subtitle-en {
+        font-size: 0.85rem;
+    }
+
+    .tags, .tags-en {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .logo span {
+        font-size: 12px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .section {
+        padding: 50px 15px;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY & PERFORMANCE
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Skip to main content link for screen readers */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--accent-color);
+    color: #ffffff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 1000;
+    transition: top 0.3s;
+    font-family: 'Cairo', sans-serif;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .hero-buttons,
+    .contact-buttons,
+    .footer {
+        display: none;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 40px 20px;
+        background: #ffffff;
+        color: #000000;
+    }
+
+    .section {
+        padding: 30px 20px;
+    }
+}
